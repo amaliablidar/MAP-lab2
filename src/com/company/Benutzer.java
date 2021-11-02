@@ -41,7 +41,7 @@ public class Benutzer {
     }
 
     //Metoda calculeaza timpul total petrecut facand sport
-    public double kalkuliereZeit(){
+    public double kalkuliereGanzeZeit(){
         double summe = 0;
         for(Sport s:this.sport){
             summe+=s.kalkuliereZeit();
@@ -50,7 +50,7 @@ public class Benutzer {
     }
 
     //Metoda calculeaza timpul petrecut facand un sport s
-    public double kalkuliereZeit(Sport s){
+    public double kalkuliereZeitEinSport(Sport s){
         double summeZeit =0;
         for(Sport sports:sport){
             if(s.kalkuliereZeit()==sports.kalkuliereZeit()){

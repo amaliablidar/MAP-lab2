@@ -107,7 +107,7 @@ public class UI {
         int option = read.nextInt();
         while(option!=4){
             if(option==1){
-                System.out.println(ANSI_PURPLE+benutzer.kalkuliereZeit());
+                System.out.println(ANSI_PURPLE+benutzer.kalkuliereGanzeZeit());
                 optionsMenu();
                 option = read.nextInt();
             }
@@ -118,24 +118,24 @@ public class UI {
                     int optionSport = read.nextInt();
                     while(optionSport!=5){
                     if(optionSport==1){
-                        System.out.println(ANSI_BLUE+"Timpul necesar pentru acest sport este: "+benutzer.kalkuliereZeit(basketball));
+                        System.out.println(ANSI_BLUE+"Timpul necesar pentru acest sport este: "+benutzer.kalkuliereZeitEinSport(basketball));
                         optionenSport();
                         optionSport = read.nextInt();
                     }
                     else
                         if (optionSport == 2) {
-                            System.out.println(ANSI_BLUE + "Timpul necesar pentru acest sport este: " + benutzer.kalkuliereZeit(fussball));
+                            System.out.println(ANSI_BLUE + "Timpul necesar pentru acest sport este: " + benutzer.kalkuliereZeitEinSport(fussball));
                             optionenSport();
                             optionSport = read.nextInt();
                         } else
                             if (optionSport == 3) {
-                                System.out.println(ANSI_BLUE+"Timpul necesar pentru acest sport este: "+benutzer.kalkuliereZeit(hindernislauf));
+                                System.out.println(ANSI_BLUE+"Timpul necesar pentru acest sport este: "+benutzer.kalkuliereZeitEinSport(hindernislauf));
                                 optionenSport();
                                 optionSport = read.nextInt();
                             }
                             else
                                 if(optionSport==4){
-                                    System.out.println(ANSI_BLUE+"Timpul necesar pentru acest sport este: "+benutzer.kalkuliereZeit(hochsprung));
+                                    System.out.println(ANSI_BLUE+"Timpul necesar pentru acest sport este: "+benutzer.kalkuliereZeitEinSport(hochsprung));
                                     optionenSport();
                                     optionSport = read.nextInt();
                                 }
